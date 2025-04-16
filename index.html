@@ -4,55 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lace Border Page</title>
-body {
-  background-color: #000080; /* Navy blue background */
-  color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 40px; /* Add padding so lace doesn't get cut off */
-  position: relative; /* To position the lace images absolutely */
-}
+  <style>
+    body {
+      background-color: #000080; /* Navy blue background */
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px; /* Add padding so lace doesn't get cut off */
+      position: relative; /* To position the lace images absolutely */
+    }
 
-.corner-lace {
-  position: absolute;
-  width: 150px; /* Adjust based on how big you want the lace */
-  height: auto;
-  background-image: url('https://raw.githubusercontent.com/wistfultree7/checkout/main/graphics/whitelace.png');
-  background-repeat: no-repeat;
-  z-index: 10;
-  pointer-events: none; /* So it doesn’t block other content */
-}
+    .corner-lace {
+      position: absolute;
+      width: 150px; /* Adjust based on how big you want the lace */
+      height: auto;
+      background-image: url('https://raw.githubusercontent.com/wistfultree7/checkout/main/graphics/whitelace.png');
+      background-repeat: no-repeat;
+      z-index: 10;
+      pointer-events: none; /* So it doesn’t block other content */
+    }
 
-.corner-lace.top-left {
-  top: 0;
-  left: 0;
-}
+    .corner-lace.top-left {
+      top: 0;
+      left: 0;
+    }
 
-.corner-lace.top-right {
-  top: 0;
-  right: 0;
-}
+    .corner-lace.top-right {
+      top: 0;
+      right: 0;
+    }
 
-.corner-lace.bottom-left {
-  bottom: 0;
-  left: 0;
-}
+    .corner-lace.bottom-left {
+      bottom: 0;
+      left: 0;
+    }
 
-.corner-lace.bottom-right {
-  bottom: 0;
-  right: 0;
-}
-
+    .corner-lace.bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="corner-lace top-left"></div>
-<div class="corner-lace top-right"></div>
-<div class="corner-lace bottom-left"></div>
-<div class="corner-lace bottom-right"></div>
+  <div class="corner-lace top-right"></div>
+  <div class="corner-lace bottom-left"></div>
+  <div class="corner-lace bottom-right"></div>
   <div class="container">
     <h1>Welcome to My Cozy Page</h1>
     <p>This page has a navy blue background with lace borders!</p>
   </div>
 </body>
 </html>
-
