@@ -1,78 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lace Border Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arshia's Home</title>
   <style>
     body {
-      background-color: #000080; /* Navy blue background */
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0; /* Removed padding to let lace fit better */
-      height: 100vh; /* Ensure body takes full height */
-      position: relative; /* So the lace can be positioned in the corners */
-    }
-
-    .corner-lace {
-      position: absolute;
-      width: 200px; /* Adjust width based on lace size */
-      height: 200px; /* Adjust height to match the image */
-      background-image: url('https://raw.githubusercontent.com/wistfultree7/checkout/main/graphics/whitelace.png');
-      background-repeat: no-repeat;
-      background-size: contain; /* Ensure the image scales properly */
-      z-index: 10;
-      pointer-events: none;
-    }
-
-    .corner-lace.top-left {
-      top: 0;
-      left: 0;
-    }
-
-    .corner-lace.top-right {
-      top: 0;
-      right: 0;
-    }
-
-    .corner-lace.bottom-left {
-      bottom: 0;
-      left: 0;
-    }
-
-    .corner-lace.bottom-right {
-      bottom: 0;
-      right: 0;
-    }
-
-    .container {
-      position: relative;
-      z-index: 1; /* Make sure the content is above the lace */
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2em;
-    }
-
-    p {
-      font-size: 1.2em;
-    }
+  margin: 0;
+  padding: 0;
+  background-image: url('graphics/wallpaper.png'); /* or .png, depending on your file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
   </style>
 </head>
 <body>
-  <!-- Lace in Four Corners -->
-  <div class="corner-lace top-left"></div>
-  <div class="corner-lace top-right"></div>
-  <div class="corner-lace bottom-left"></div>
-  <div class="corner-lace bottom-right"></div>
-
-  <!-- Content -->
-  <div class="container">
-    <h1>Welcome to My Cozy Page</h1>
-    <p>This page has lace borders in all four corners!</p>
-  </div>
 </body>
 </html>
