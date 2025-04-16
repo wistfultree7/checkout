@@ -10,18 +10,20 @@
       color: white;
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 40px; /* Add padding so lace doesn't get cut off */
-      position: relative; /* To position the lace images absolutely */
+      padding: 0; /* Removed padding to let lace fit better */
+      height: 100vh; /* Ensure body takes full height */
+      position: relative; /* So the lace can be positioned in the corners */
     }
 
     .corner-lace {
       position: absolute;
-      width: 150px; /* Adjust based on how big you want the lace */
-      height: auto;
+      width: 150px; /* Adjust width based on lace size */
+      height: 150px; /* Adjust height to match the image */
       background-image: url('https://raw.githubusercontent.com/wistfultree7/checkout/main/graphics/whitelace.png');
       background-repeat: no-repeat;
+      background-size: contain; /* Ensure the image scales properly */
       z-index: 10;
-      pointer-events: none; /* So it doesn’t block other content */
+      pointer-events: none;
     }
 
     .corner-lace.top-left {
@@ -43,16 +45,34 @@
       bottom: 0;
       right: 0;
     }
+
+    .container {
+      position: relative;
+      z-index: 1; /* Make sure the content is above the lace */
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
+  <!-- Lace in Four Corners -->
   <div class="corner-lace top-left"></div>
   <div class="corner-lace top-right"></div>
   <div class="corner-lace bottom-left"></div>
   <div class="corner-lace bottom-right"></div>
+
+  <!-- Content -->
   <div class="container">
     <h1>Welcome to My Cozy Page</h1>
-    <p>This page has a navy blue background with lace borders!</p>
+    <p>This page has lace borders in all four corners!</p>
   </div>
 </body>
 </html>
